@@ -7,5 +7,5 @@ RUN echo "===> Creating authorizer logs dir ..." \
 
 VOLUME ["/var/lib/${COMPONENT}/data", "/etc/${COMPONENT}/secrets", "/var/log/kafka-controller-logs"]
 
-COPY include/etc/confluent/log4j.properties.template /etc/confluent/log4j.properties.template
+COPY include/etc/confluent/docker/log4j.properties.template /etc/confluent/log4j.properties.template
 
